@@ -13,7 +13,7 @@
             android:theme="@style/AppTheme"
             >
         <activity
-                android:name=".Home_Page"
+                android:name=".HomePage"
                 android:label="@string/title_activity_home__page"
                 android:theme="@style/AppTheme.NoActionBar"
                 >

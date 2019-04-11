@@ -22,7 +22,7 @@ import android.widget.Toast
 import com.synnapps.carouselview.ImageClickListener
 
 
-class Home_Page : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class HomePage : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home__page)
@@ -56,7 +56,7 @@ class Home_Page : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
         carouselView.setImageListener(imageListener)
         carouselView.setImageClickListener(ImageClickListener { position ->
             Toast.makeText(
-                this@Home_Page,
+                this@HomePage,
                 "Clicked item: $position",
                 Toast.LENGTH_SHORT
             ).show()
@@ -149,7 +149,7 @@ class Home_Page : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
                     return Recycler_Page()
                 }
                 1 -> {
-                    return Grid_Page()
+                    return GridPage()
                 }
                 else -> return null
             }

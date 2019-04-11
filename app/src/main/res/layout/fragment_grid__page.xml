@@ -4,15 +4,27 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Grid_Page"
-        android:background="@drawable/g_tech"
+        tools:context=".GridPage"
+        android:background="@android:color/holo_blue_bright"
         >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/grid_view_string"
-            />
+            android:orientation="vertical"
+            >
+
+        <GridView
+                android:id="@+id/song_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="150dp"
+                android:horizontalSpacing="15dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="15dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                />
+    </LinearLayout>
 
 </FrameLayout>
